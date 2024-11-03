@@ -86,7 +86,7 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center py-8 bg-gray-100 min-h-screen relative">
       <Button
-        className="absolute right-5 top-5"
+        className="absolute right-5 top-0 sm:top-5"
         variant="contained"
         color="error"
         onClick={logoutUser}
