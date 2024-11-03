@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(29, 29, 29, 0.87);
+  background-color: #fbfbfb;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@layer base {
+  h1 {
+    @apply text-[42px] md:text-[56px] font-medium leading-[70.56px] md:leading-[70.56px] font-serif !important;
+  }
+  h2 {
+    @apply text-[30px] md:text-[36px] font-medium leading-[60.48px] md:leading-[60.48px] font-serif !important;
+  }
+  h3 {
+    @apply text-[24px] md:text-[30px] font-medium leading-[38px] font-serif !important;
+  }
+  h4 {
+    @apply text-[20px] md:text-[24px] font-medium leading-normal font-serif !important;
+  }
+  h5 {
+    @apply text-[16px] md:text-[20px] font-medium leading-5 font-serif !important;
+  }
+  h6 {
+    @apply text-[14px] md:text-[16px] font-medium leading-5 font-serif !important;
+  }
+  p {
+    @apply text-[14px] md:text-[14px] font-normal leading-[17.07px] font-sans !important;
+  }
+}
+
+@layer components {
+  .body-xl {
+    @apply text-[24px] md:text-[30px] font-sans !important;
+  }
+  .body-lg {
+    @apply text-[16px] md:text-[18px] font-sans !important;
+  }
+  .body-md {
+    @apply text-[14px] md:text-[16px] font-sans !important;
+  }
+  .body-base {
+    @apply text-[14px] md:text-[14px] font-sans !important;
+  }
+  .body-xs {
+    @apply text-[12px] md:text-[12px] font-sans !important;
+  }
+  .body-xxs {
+    @apply text-[10px] md:text-[10px] font-sans !important;
+  }
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
