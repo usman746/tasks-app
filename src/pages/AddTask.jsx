@@ -81,6 +81,14 @@ const AddTask = () => {
         <Button type="submit" variant="contained" color="primary" fullWidth>
           Save Task
         </Button>
+        <Button
+          onClick={() => navigate(-1)}
+          variant="outlined"
+          color="primary"
+          fullWidth
+        >
+          Back
+        </Button>
       </form>
     </div>
   );
